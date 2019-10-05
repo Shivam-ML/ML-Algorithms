@@ -15,7 +15,21 @@ Regression is a statistical measurement used in finance, investing, and other di
                             Y(pred) = b0 + b1*x 
                             
 
-![alt text](scatter-line.JPG)
-
 
 ![alt text](scatter-plot.JPG)
+
+## Estimate Coefficients
+
+We must estimate the values for two coefficients in simple linear regression.
+
+The first is B1 which can be estimated as:
+
+### B1 = sum((x(i) - mean(x)) * (y(i) - mean(y))) / sum( (x(i) - mean(x))^2 )
+
+### B1 = covariance(x, y) / variance(x)
+
+### B0 = mean(y) - B1 * mean(x)
+
+
+
+![alt text](scatter-line.JPG)
